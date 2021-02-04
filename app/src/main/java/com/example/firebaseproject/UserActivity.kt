@@ -71,7 +71,7 @@ class UserActivity : AppCompatActivity() {
 
                     withContext(Dispatchers.Main){
                         setUserInfo()
-                        Toast.makeText(this@UserActivity, "Profile successfully updated!", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@UserActivity, "პროფილი წარმატებით განახლდა!", Toast.LENGTH_SHORT).show()
                     }
                 }catch (e:Exception){
                 withContext(Dispatchers.Main){
@@ -88,7 +88,7 @@ class UserActivity : AppCompatActivity() {
         auth.signOut()
         val i =Intent(this,MainActivity::class.java)
         startActivity(i)
-        Toast.makeText(this,"Succesfully Signed Out!",Toast.LENGTH_SHORT).show()
+        Toast.makeText(this,"წარმატებით გამოხვედით!",Toast.LENGTH_SHORT).show()
     }
 
 
@@ -112,7 +112,7 @@ class UserActivity : AppCompatActivity() {
                 Toast.makeText(this, ImagePicker.getError(data), Toast.LENGTH_SHORT).show()
             }
             else->{
-                Toast.makeText(this, "Task Cancelled", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "თქვენ გამორთეთ", Toast.LENGTH_SHORT).show()
             }
         }
     }

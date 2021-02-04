@@ -38,7 +38,7 @@
                 android:layout_margin="10dp"
                 android:background="@drawable/round_buttons"
                 android:backgroundTint="#F2F2F2"
-                android:hint="E-mail"
+                android:hint="E-მეილი"
                 android:inputType="textEmailAddress"
                 android:padding="10dp" />
 
@@ -49,7 +49,7 @@
                 android:layout_margin="10dp"
                 android:background="@drawable/round_buttons"
                 android:backgroundTint="#F2F2F2"
-                android:hint="Password"
+                android:hint="პაროლი"
                 android:inputType="textPassword"
                 android:padding="10dp" />
 
@@ -67,8 +67,8 @@
                     android:layout_weight="1"
                     android:background="@drawable/round_buttons"
                     android:backgroundTint="#FFA726"
-                    android:text="Sign up"
-                    android:textColor="@android:color/white" />
+                    android:text="რეგისტრაცია"
+                    android:textColor="@color/teal_200" />
 
                 <Button
                     android:id="@+id/btn_login"
@@ -77,9 +77,9 @@
                     android:layout_margin="10dp"
                     android:layout_weight="1"
                     android:background="@drawable/round_buttons"
-                    android:backgroundTint="#42A5F5"
-                    android:text="Login"
-                    android:textColor="@android:color/white" />
+                    android:backgroundTint="@color/white"
+                    android:text="შესვლა"
+                    android:textColor="#533E40" />
 
             </LinearLayout>
         </LinearLayout>

@@ -1,5 +1,7 @@
 package com.example.firebaseproject
 
+import android.content.Intent
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -20,8 +22,10 @@ class NewActivity : AppCompatActivity() {
 
 
 
+
+
         val actionBar = supportActionBar
-        actionBar!!.title = "Main Menu"
+        actionBar!!.title = "წარუმატებელი აპლიკაცია"
         actionBar.setDisplayHomeAsUpEnabled(true)
         setUpTabs()
 
@@ -30,9 +34,9 @@ class NewActivity : AppCompatActivity() {
     }
     private fun setUpTabs(){
         val adapter= ViewPagerAdapter(supportFragmentManager)
-        adapter.addFragment(HomeFragment(), "Home")
-        adapter.addFragment(FavoritesFragment(),"Favorites")
-        adapter.addFragment(SettingsFragment(),"Settings")
+        adapter.addFragment(HomeFragment(), "მთავარი")
+        adapter.addFragment(FavoritesFragment(),"ფავორიტები")
+        adapter.addFragment(SettingsFragment(),"პარამეტრები")
         viewPager.adapter=adapter
         tabs.setupWithViewPager(viewPager)
 
@@ -41,6 +45,7 @@ class NewActivity : AppCompatActivity() {
         tabs.getTabAt(2)!!.setIcon(R.drawable.ic_baseline_settings_24)
     }
 }
+
 
 
 

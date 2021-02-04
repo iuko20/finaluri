@@ -62,7 +62,7 @@ class MainActivity : AppCompatActivity() {
                         auth.signInWithEmailAndPassword(email,password).await()
                     }
                     withContext(Dispatchers.Main){
-                        Toast.makeText(this@MainActivity,"You are now Logged in!",Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@MainActivity,"თქვენ წარმატებით შეხვედით!",Toast.LENGTH_SHORT).show()
                         val i = Intent(this@MainActivity, UserActivity::class.java)
                         startActivity(i)
                         finish()
@@ -111,7 +111,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, ImagePicker.getError(data), Toast.LENGTH_SHORT).show()
             }
             else->{
-                Toast.makeText(this, "Task Cancelled", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "თქვენ გამოხვედით", Toast.LENGTH_SHORT).show()
             }
         }
     }
